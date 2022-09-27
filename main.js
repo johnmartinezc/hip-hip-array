@@ -257,7 +257,7 @@ console.log("Challenge 13");
 // Then console.log out that string.
 // Challenge 13 Code
 
-let joined = dinosaurs.join(' * ')
+let joined = dinosaurs.join(" * ")
 console.log(joined)
 
 
@@ -289,7 +289,8 @@ const sos = ["EMS", "Police", "Firefighter"]
 const bad = ["Robber", "Theif", "Mug shot"]
 
 let copsandrobbers = sos.concat(bad)
-
+console.log(sos)
+console.log(bad)
 let f = 0
 
 while (f < copsandrobbers.length) {
