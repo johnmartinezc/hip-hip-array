@@ -42,7 +42,12 @@ console.log("Challenge 2");
 const grades = [100, 80, 110, 75, 83, 64];
 //Challenge 2 Code
 
-console.log(grades.reverse())
+
+i= 0
+while(i < grades.length){
+    console.log(grades[i])
+    i++
+}
 
 
 
@@ -59,7 +64,7 @@ let t = 0
 
 
 while (t < positiveNumbers.length) {
-    if (positiveNumbers[t] % 2 === 0) {
+    if (positiveNumbers[t] % 2 == 0) {
         console.log(positiveNumbers[t])
 
     }
@@ -80,7 +85,7 @@ let y = 0
 
 
 while (y < mixedSignNumbers.length) {
-    if (mixedSignNumbers[y] % 2 === 0) {
+    if (mixedSignNumbers[y] % 2 == 0) {
         console.log(mixedSignNumbers[y])
 
     }
@@ -97,13 +102,15 @@ const symmetricalCapitals = ['A', 'H', 'I', 'M', 'O', 'T', 'U', 'V', 'W', 'X', '
 // Challenge 5 Code
 
 
-let result = symmetricalCapitals.splice(2, 8)
+symmetricalCapitals.shift()
+symmetricalCapitals.shift()
+symmetricalCapitals.pop()
 
 
 let r = 0;
 
-while (r < result.length) {
-    console.log(result[r]);
+while (r < symmetricalCapitals.length) {
+    console.log(symmetricalCapitals[r]);
     r++;
 }
 
@@ -117,7 +124,7 @@ const fibonacciNumbers = [1, 1, 2, 3, 5, 8, 13];
 // Challenge 6 Code
 
 fibonacciNumbers.unshift(2)
-fibonacciNumbers.push(33, 44)
+fibonacciNumbers.push(21, 34)
 
 let e = 0;
 
@@ -131,7 +138,9 @@ while (e < fibonacciNumbers.length) {
 console.log("\n");
 console.log("Challenge 7");
 // Challenge 7
-// Make a NEW array with 5 values of your choice, using the same syntax as the array creation from the previous 6 challenges; that is, every value should be placed within the square brackets.  Now console.log out each value individually.
+// Make a NEW array with 5 values of your choice,
+// using the same syntax as the array creation from the previous 6 challenges; 
+//that is, every value should be placed within the square brackets.  Now console.log out each value individually.
 // Challenge 7 Code
 
 const rich = [22, 33, 11, 44, 66]
@@ -166,7 +175,7 @@ console.log("Challenge 9");
 // Loop through the `students` array from Challenge 1, starting at index 3 and ending at index 10 (INCLUSIVE), logging out each value individually.
 // Challenge 9 Code
 
-let stud = students.slice(2, 11)
+let stud = students.slice(3, 11)
 let a = 0
 
 while (a < stud.length) {
@@ -179,24 +188,20 @@ while (a < stud.length) {
 console.log("\n");
 console.log("Challenge 10");
 // Challenge 10
-// Loop through the `students` array from Challenge 1, making a COPY of the array , starting at index 3 and ending at index 10 (INCLUSIVE). This is very similar to string building; create a new array, loop through the old one, and put values from the original in the new one. Then log out each value of the copy indivudally.
+// Loop through the `students` array from Challenge 1, making a COPY of the array ,
+// starting at index 3 and ending at index 10 (INCLUSIVE). This is very similar to string building; create a new array, 
+//loop through the old one, and put values from the original in the new one. Then log out each value of the copy indivudally.
 // Do NOT use slice, you will be using that for the next challenge!
 // Challenge 10 Code
 
 
-
-let stu = stud
+let students2 = students.splice(3,11)
 
 let s = 0
 
-const students2 = ["James", "John", "Kevin"]
-
-let join = stu.concat(students2)
-
-
-while (s < join.length) {
-    if (join.indexOf()) {
-        console.log(join[s])
+while (s < students2.length) {
+    if (students2.indexOf()) {
+        console.log(students2[s])
     }
     s++
 }
@@ -208,8 +213,10 @@ console.log("Challenge 11");
 // Challenge 11
 // Make a COPY of the `students` array *using .slice*, starting at index 3 and ending at index 10 (INCLUSIVE), 
 //then log out each value of the copy individually.
-//THEN log out each value of the original array.Notice that the original array didn 't get any values taken out of it, because `slice` does NOT modify the original array.
+//THEN log out each value of the original array.Notice that the original array didn't get any values taken out of it,
+// because `slice` does NOT modify the original array.
 // Challenge 11 Code
+
 
 let stude = students.slice(2, 11)
 
