@@ -237,9 +237,9 @@ const dinosaurs = ['Velociraptor', 'T-Rex', 'Stegosaurus', 'Triceratops', 'Dimet
     // Challenge 12 Code
 
 
-let my = dinosaurs.splice(3)
-
+let my = dinosaurs.splice(dinosaurs.indexOf("Triceratops"),3)
 console.log(dinosaurs)
+console.log(my)
 
 
 
@@ -250,8 +250,8 @@ console.log("Challenge 13");
 // Then console.log out that string.
 // Challenge 13 Code
 
-
-console.log(dinosaurs.join(' * '))
+let joined = dinosaurs.join(' * ')
+console.log(joined)
 
 
 
@@ -263,8 +263,8 @@ console.log("Challenge 14");
 // Use .reverse to reverse the dinosaur array and then log out the original array. .reverse DOES change the original array.
 // Challenge 14 Code
 
-
-console.log(dinosaurs.reverse())
+let dinoReverse = dinosaurs.reverse()
+console.log(dinoReverse)
 
 
 
